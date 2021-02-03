@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Page</title>
+
+
+<p><link href="css/styles.css"    type="text/css"    rel="stylesheet"></p>
+<a href="index.html">Introductory Page</a><br>
+
+
+</head>
+<body>
+
+<h2>AG Motorcycle Rentals</h2>
+<h4>Come Test Your Dream Bike</h4>
+
+<FORM>
+    Name: <INPUT TYPE="text" NAME="name"><br>
+    Password: <input type="password" name="pwd"><br>
+    <HR>
+    <table>
+      <tr>
+        <td valign="top">
+          Motorcycle:<br>
+          <select name="Motorcycle">
+            <option value="Kawasaki Zx10R">Zx10R</option>
+            <option value="Honda CBR1000RR">CBR1000RR</option>
+            <option value="Suzuki GSXR1000R">GSXR1000R</option>
+            <option value="Yamaha YZF-R1">YZF-R1</option>
+          </select>
+        </td>
+        <td>
+        
+          Payment:<br>
+            <input type="radio" name="pmt" value="cash" checked>Cash<br>
+            <input type="radio" name="pmt" value="credit">Credit<br>
+            <input type="radio" name="pmt" value="debit">Debit
+        </td>
+        <td valign="top">
+            Riding Experience:<br>
+            <input type="checkbox" name="eatin" value="Bike">1 Year or Less<br>
+            <input type="checkbox" name="member" value="Bike">2 to 4 Years<br>
+            <input type="checkbox" name="member" value="Bike">5 Years +
+        </td>         
+      </tr>
+    </table>
+    <label for="cars">Choose one of our Locations:</label>
+
+    <select name="Locations" id="locations" multiple>
+      <option value="Downtown LA">Downtown LA</option>
+      <option value="San Jose">San Jose</option>
+      <option value="Long Beach">Long Bech</option>
+      <option value="Fresno">Fresno</option>
+    </select>
+
+    <label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2021-01-01" max="2021-12-31">
+
+<INPUT TYPE="submit" VALUE="Submit">   <input type="reset">
+
+</body>
+</html>
